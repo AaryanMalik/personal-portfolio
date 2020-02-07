@@ -1,0 +1,158 @@
+body{
+  background:crimson;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+#nav-bar{
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:70px;
+  background-color:rgb(0,200,120);
+  box-shadow: 0px 10px 50px green;
+  z-index: 2;
+}
+
+#nav-list{
+   margin-right: 2rem;
+  font-family: 'Carrois Gothic SC', cursive;
+  font-size:25px;
+}
+  ul {
+  list-style-type: none;
+  padding-top:20px;
+}
+#nav-link{
+color:white;
+  text-decoration:none;
+  padding:1em;
+}
+@media screen and (max-width : 400px ){
+ #nav-list{
+    margin-right:3rem;
+  }
+  
+  #nav-link{
+    padding:0px;
+  text-align:center;
+  }
+}
+#nav-link:hover{
+  background:rgb(0,150,100);
+}
+#welcome-section{
+  background-color:white;
+ font-family: 'Baloo Bhaijaan', cursive;
+  font-size:30px;
+  display:flex;
+  text-align:center;
+  flex-direction: column;
+  justify-content: center;
+  position:float;
+  left:10px;
+  width:100%;
+  height:100vh;
+}
+#welcome-section h1{
+  font-size:50px;
+}
+#welcome-section p{
+  color:red;
+}
+#projects h2{
+  text-align:center;
+  font-size:30px;
+  color:white;
+  font-family: 'Carrois Gothic SC', cursive;
+  text-decoration:underline;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap:30px 20px;
+  padding: 40px;
+}
+@media only screen and (max-width: 900px ) {
+.grid-container { 
+  grid-template-columns: auto auto;
+  }
+  }
+@media only screen and (max-width: 400px ) {
+.grid-container { 
+  grid-template-columns: auto;
+  }
+  }
+
+.grid-item {
+  width:300PX;
+  background-color:#303841;
+}
+#img{
+  width:100%;
+}
+
+#Myproject{
+   font-family: 'Carrois Gothic SC', cursive;
+  text-decoration:none;
+  color:WHITE;
+  font-size:20px;
+}
+#contact{
+background-color:white;
+  height:68vh;
+  border-bottom:2px solid ;
+}
+#contact h2{
+  font-family: 'Baloo Bhaijaan', cursive;
+  color:black;
+  font-size:50px;
+  text-decoration:none;
+}
+#contact p{
+  color:crimson;
+  text-align:center;
+  font-size:20px;
+  font-family: 'Baloo Bhaijaan', cursive;
+}
+.contact-links {
+  word-spacing:30px;
+  text-align:center;
+  position:relative;
+  top:50px;
+}
+#profile-link{
+     font-family: 'Carrois Gothic SC', cursive;
+  color:black;
+  font-size:35px;
+  text-decoration:none;
+}
+footer{
+  background-color:#303841;
+  padding-top:30px;
+  padding-bottom:30px;
+  border-top:2px solid crimson;
+  position:absolute;
+  top:130px;
+  display:flex;
+}
+#contact footer p{
+  color:white;
+    font-family: 'Carrois Gothic SC', cursive;
+}
+#contact footer a{
+  margin-left:10px;
+  color:rgb(90,2462,120);
+  font-size:20px;
+  text-decoration:none;
+}
+
+@media only screen and (max-width:400px){
+ footer{
+   display:block
+}
